@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_login</title>
+    <link rel="icon" href="imgs/Beige Cute Minimalistic Candle Logo.png" type="image/png">
+    <link rel="stylesheet" href="css/logadmins.css">
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin-LOGIN</h2>
+        <img src="imgs/candlelog.png" class="candlelog">
+        <p>Please enter your User name and password:</p>
+        <form id="loginForm">
+            <input type="text" id="User" name="User" placeholder="User name">
+            <input type="password" id="ID" name="ID" placeholder="Your ID">
+            <label for="saveMe" class="save">Save Me</label>
+            <input type="checkbox" id="saveMe" name="saveMe" class="savebut">
+            
+            <button type="button" onclick="checkLogin()">LOGIN</button>
+        </form>
+        <p class="creatacc">Don't have an account? <a href="Admin_signup.html">Create one</a></p>
+    </div>
+    <script src="js/adminlog.js"></script>
+</body>
+</html>

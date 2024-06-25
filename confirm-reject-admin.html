@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Confirm/Reject Orders</title>
+
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #FAF1E7;
+            color: rgb(78, 44, 0);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-width: 3px;
+            border-color: rgb(78, 44, 0);
+        }
+
+        #ordersContainer {
+            margin-top: 80px;
+            width: 60%;
+        }
+
+        .order {
+            border: 2px solid #8B4513;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .orderStatus {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product {
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .confirmationButtons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            background-color: #8B4513;
+            color: #f2ecdf;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="CRUD.html" style="color: #8B4513;">Back to Admin Home</a>
+    </header>
+
+    <div id="ordersContainer"></div>
+
+    <script>
+        // Function to retrieve orders from local storage
+        function getOrders() {
+            return JSON.parse(localStorage.getItem('orders')) || [];
+        }
+
+        // Function to retrieve confirmed orders from local storage
+        function getConfirmedOrders() {
+            return JSON.parse(localStorage.getItem('confirmedOrders')) || [];
+        }
+
+        // Function to render orders on the page
+        function renderOrders() {
+            const ordersContainer = document.getElementById('ordersContainer');
+            const orders = getOrders();
+
+            if (!ordersContainer) {
+                console.error('Orders container not found.');
+                return;
+            }
+
+            ordersContainer.innerHTML = '';
+
+            if (orders.length === 0) {
+                const noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'No orders available.';
+                ordersContainer.appendChild(noResultsMessage);
+                return;
+            }
+
+            orders.forEach(order => {
+                const orderElement = document.createElement('div');
+                orderElement.className = 'order';
+                orderElement.setAttribute('data-order-id', order.id); // Set the order ID
+
+                const orderStatusElement = document.createElement('div');
+                orderStatusElement.className = 'orderStatus';
+                orderStatusElement.textContent = `Order Status: ${order.status || 'Pending'}`;
+
+                const productsElement = document.createElement('div');
+                productsElement.className = 'products';
+
+                order.products.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.className = 'product';
+                    productElement.innerHTML = `<p>${product.name} - Quantity: ${product.quantity}</p>`;
+                    productsElement.appendChild(productElement);
+                });
+
+                const confirmationButtonsElement = document.createElement('div');
+                confirmationButtonsElement.className = 'confirmationButtons';
+
+                const confirmButton = createConfirmationButton('Confirm', () => confirmOrder(order));
+                const rejectButton = createConfirmationButton('Reject', () => rejectOrder(order));
+
+                confirmationButtonsElement.appendChild(confirmButton);
+                confirmationButtonsElement.appendChild(rejectButton);
+
+                orderElement.appendChild(orderStatusElement);
+                orderElement.appendChild(productsElement);
+                orderElement.appendChild(confirmationButtonsElement);
+
+                ordersContainer.appendChild(orderElement);
+            });
+        }
+
+        // Function to create confirmation buttons
+        function createConfirmationButton(text, onClick) {
+            const button = document.createElement('button');
+            button.textContent = text;
+            button.addEventListener('click', onClick);
+            return button;
+        }
+
+        // Function to confirm an order
+        function confirmOrder(order) {
+            order.status = 'Confirmed';
+
+            // Save the confirmed order in the 'confirmedOrders' array
+            const confirmedOrders = getConfirmedOrders();
+            confirmedOrders.push(order);
+            localStorage.setItem('confirmedOrders', JSON.stringify(confirmedOrders));
+
+            updateOrdersInLocalStorage();
+            removeOrderElement(order.id);
+            notifyOrderStatusChange(order.status);
+            alert('Order Confirmed!');
+        }
+
+        // Function to reject an order
+        function rejectOrder(order) {
+            order.status = 'Rejected';
+            updateOrdersInLocalStorage();
+            removeOrderElement(order.id);
+            notifyOrderStatusChange(order.status);
+            alert('Order Rejected!');
+        }
+
+        // Function to notify order status change
+        function notifyOrderStatusChange(status) {
+            const event = new CustomEvent('orderStatusChanged', { detail: { status } });
+            document.dispatchEvent(event);
+        }
+
+        // Function to update orders in local storage
+        function updateOrdersInLocalStorage() {
+            const orders = getOrders();
+            localStorage.setItem('orders', JSON.stringify(orders));
+        }
+
+        // Function to remove an order element from the page
+        function removeOrderElement(orderId) {
+            const ordersContainer = document.getElementById('ordersContainer');
+            const orderElement = document.querySelector(`[data-order-id="${orderId}"]`);
+
+            if (orderElement) {
+                ordersContainer.removeChild(orderElement);
+            }
+        }
+
+        // Initial rendering of orders
+        renderOrders();
+    </script>
+</body>
+
+</html>

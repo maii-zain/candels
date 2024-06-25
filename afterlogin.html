@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap">
+
+    <title>قوم ولعلك شمعة</title>
+    <style>
+       body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #FAF1E7;
+            color: rgb(78, 44, 0);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-width: 3px;
+            border-color: rgb(78, 44, 0);
+            height: 45px;
+            padding-top: 10px;
+           
+        }
+
+        #userContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        #helloLogin {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        #cartIcon {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        #wishlistIcon {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        #sortDropdown {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        #sort {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #FAF1E7;
+            height: 33px;
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        #productContainer {
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #FAF1E7;
+            width: 80%;
+            /* margin: 0 auto; */
+            /* Center the grid horizontally */
+        }
+
+        .product {
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            position: relative;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #8B4513;
+            color: #f2ecdf;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .details-button {
+            background-color: #8B4513;
+            color: #f2ecdf;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        #searchContainer {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #searchIcon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #8B4513;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+            position: sticky;
+            margin-left: -7px;
+            top: 0;
+            background-color: #8B4513;
+            color: #f2ecdf;
+        }
+
+        .wishlist-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .wishlist-icon-selected {
+            color: #8B4513;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'cairo', sans-serif;
+            text-align: center;
+        }
+
+        /* .star-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        } */
+
+
+
+        .star-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .star {
+            font-size: 20px;
+            cursor: pointer;
+            color: #ccc;
+            /* Empty star color */
+            margin-right: 2px;
+        }
+
+        .rating {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .star.selected {
+            color: #ffd700 !important;
+            /* Filled star color */
+        }
+
+        #userDropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            z-index: 1;
+        }
+
+        #userDropdown a {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #userDropdown a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="searchContainer">
+            <span id="searchIcon" onclick="performSearch()">Search</span>
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+        <h1>قوم ولعلك شمعة</h1>
+        <div id="userContainer">
+            <span id="helloLogin" onclick="toggleUserDropdown()"> 
+            <span onclick="logout()" style="cursor: pointer; position: relative; right: 80px; top: 35px;">logout &nbsp; </span> 
+            <!-- <span id="userType" style="cursor: pointer;" >login</span></span>
+            <div id="userDropdown">
+                <a href="login.html" onclick="selectUserType('user')">User</a>
+                <a href="log_as_admin.html" onclick="selectUserType('admin')">Admin</a>
+              
+            </div> -->
+            <span id="cartIcon" onclick="viewCart()" style="position: relative; right: 88px; top: 35px;">🛒</span>
+            <span id="wishlistHeaderIcon" onclick="goToWishlist()" style="cursor: pointer;position: relative; right: 95px; top: 35px;">🤎</span>
+            <div id="sortDropdown">
+                <label for="sort" style="font-weight: bold; font-size: larger;">
+                    <pre>Filter : </pre>
+                </label>
+                <select id="sort" onchange="sortProducts(this.value)"
+                style="background-color:white ;height: 33px; width: 180px; margin-right: 20px;">
+            <option value="default">Default</option>
+            <option value="priceAsc">Price: Low to High</option>
+            <option value="priceDesc">Price: High to Low</option>
+            <option value="nameAsc">Name: A to Z</option>
+            <option value="nameDesc">Name: Z to A</option>
+            <option value="categoryStandardCandle">Category: Standard Candle</option>
+            <option value="categoryLargeCandle">Category: Large Candle</option>
+            <option value="categoryHarryPotter">Category: Harry Potter</option>
+        </select>
+        <button onclick="order_history()" style="height:33px;margin-top: 8px; margin-left: -10px;">Order's History</a></button>
+            </div>
+        </div>
+    </header>
+    <div id="productContainer"></div>
+
+    <script>
+        let productsData;
+
+        // Fetch products from the JSON file
+        async function fetchProducts() {
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+
+                if (!data || !Array.isArray(data.products)) {
+                    console.error('Incorrect contents fetched. Data:', data);
+                    throw new Error('Incorrect contents fetched, please reload.');
+                }
+
+                productsData = data.products;
+                return productsData;
+            } catch (error) {
+                console.error('Error fetching products:', error);
+                return [];
+            }
+        }
+
+        // Display products on the webpage
+        async function displayProducts(filteredProducts = null) {
+            const productContainer = document.getElementById('productContainer');
+            const products = filteredProducts || (await fetchProducts());
+
+            if (!productContainer) {
+                console.error('Product container not found.');
+                return;
+            }
+            productContainer.innerHTML = '';
+
+            if (products.length === 0) {
+                const noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'No products found.';
+                productContainer.appendChild(noResultsMessage);
+                return;
+            }
+            // Get saved star ratings from local storage
+
+            const ratingsData = JSON.parse(localStorage.getItem('ratingsData')) || {};
+
+
+            products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.className = 'product';
+
+                const imageElement = document.createElement('img');
+                imageElement.src = product.image;
+                imageElement.alt = product.name;
+
+                const titleElement = document.createElement('h3');
+                titleElement.textContent = product.name;
+
+                const nameElement = document.createElement('h1');
+                nameElement.textContent = `${product.name}`;
+
+                const descriptionElement = document.createElement('p');
+                descriptionElement.textContent = `${product.description}`;
+
+                const priceElement = document.createElement('p');
+                priceElement.textContent = `$${product.price.toFixed(2)}`;
+
+                const addToCartButton = document.createElement('button');
+                addToCartButton.textContent = 'Add to Cart';
+                addToCartButton.addEventListener('click', () => addToCart(product));
+
+                const wishlistIcon = document.createElement('span');
+                wishlistIcon.innerHTML = '🤍';
+                wishlistIcon.className = 'wishlist-icon';
+                wishlistIcon.addEventListener('click', () => toggleWishlist(product, wishlistIcon));
+
+                const ratingElement = document.createElement('div');
+                ratingElement.className = 'rating';
+                ratingElement.setAttribute('data-product-id', product.id);
+
+                for (let i = 1; i <= 5; i++) {
+                    const starElement = document.createElement('span');
+                    starElement.className = `star ${i <= ratingsData[product.id] ? 'selected' : ''}`;
+                    starElement.setAttribute('data-value', i);
+                    starElement.innerHTML = '&#9733;';
+                    starElement.addEventListener('click', (event) => handleRatingClick(product.id, i, event.target));
+                    ratingElement.appendChild(starElement);
+                }
+
+                // Load and display the saved rating
+                const savedRating = getSavedStarRating(product.id);
+                updateRatingUI(product.id, savedRating);
+
+                productElement.appendChild(imageElement);
+                productElement.appendChild(titleElement);
+                productElement.appendChild(nameElement);
+                productElement.appendChild(descriptionElement);
+                productElement.appendChild(priceElement);
+                productElement.appendChild(addToCartButton);
+                productElement.appendChild(wishlistIcon);
+                productElement.appendChild(ratingElement);
+
+                productContainer.appendChild(productElement);
+            });
+        }
+        // Function to get saved star rating from local storage
+        function getSavedStarRating(productId) {
+            const ratingsData = JSON.parse(localStorage.getItem('ratingsData')) || {};
+            return ratingsData[productId] || 0;
+        }
+
+
+        // Function to view product details
+        function viewProductDetails(productId) {
+            window.location.href = `product-details.html?id=${productId}`;
+        }
+
+        // Function to toggle star rating
+        function handleRatingClick(productId, rating, clickedStar) {
+            const stars = clickedStar.parentElement.querySelectorAll('.star');
+            const isSelected = clickedStar.classList.contains('selected');
+
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+
+
+            const ratingsData = JSON.parse(localStorage.getItem('ratingsData')) || {};
+            ratingsData[productId] = isSelected ? 0 : rating;
+            // Save the clicked rating to local storage
+            localStorage.setItem('ratingsData', JSON.stringify(ratingsData));
+
+            // Update the UI with the clicked rating
+            updateRatingUI(productId, ratingsData[productId]);
+        }
+        // Function to update UI after a rating is clicked
+        function updateRatingUI(productId, rating) {
+            const stars = document.querySelectorAll(`.star[data-product-id="${productId}"]`);
+
+            stars.forEach((star, index) => {
+                star.classList.toggle('selected', index < rating);
+            });
+        }
+        // Load and display the saved ratings after the page loads
+        window.addEventListener('load', () => {
+            const productElements = document.querySelectorAll('.product');
+
+            productElements.forEach(productElement => {
+                const productId = productElement.querySelector('.rating').getAttribute('data-product-id');
+                const savedRating = getSavedStarRating(productId);
+                updateRatingUI(productId, savedRating);
+            });
+        });
+
+        // Function to view the shopping cart
+        function viewCart() {
+            window.location.href = 'shopping-cart.html';
+        }
+
+        // Function to add a product to the cart
+        function addToCart(product) {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const productId = product.id;
+
+            if (!cartItems.includes(productId)) {
+                cartItems.push(productId);
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                alert(`Product ${product.name} added to cart!`);
+            } else {
+                alert(`Product ${product.name} is already in the cart.`);
+            }
+        }
+
+        function sortProducts(sortOption) {
+            let sortedProducts = [];
+
+            switch (sortOption) {
+                case 'priceAsc':
+                    sortedProducts = productsData.slice().sort((a, b) => a.price - b.price);
+                    break;
+                case 'priceDesc':
+                    sortedProducts = productsData.slice().sort((a, b) => b.price - a.price);
+                    break;
+                case 'nameAsc':
+                    sortedProducts = productsData.slice().sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'nameDesc':
+                    sortedProducts = productsData.slice().sort((a, b) => b.name.localeCompare(a.name));
+                    break;
+                case 'categoryStandardCandle':
+                    sortedProducts = productsData.filter(product => product.category === 'Standard Candle');
+                    break;
+                case 'categoryLargeCandle':
+                    sortedProducts = productsData.filter(product => product.category === 'Large Candle');
+                    break;
+                case 'categoryHarryPotter':
+                    sortedProducts = productsData.filter(product => product.category === 'Harry Potter');
+                    break;
+                default:
+                    sortedProducts = productsData.slice();
+            }
+
+            displayProducts(sortedProducts);
+        }
+
+        function toggleWishlist(product, wishlistIcon) {
+            const wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+
+            const isProductInWishlist = wishlistItems.some(item => item.id === product.id);
+
+            if (isProductInWishlist) {
+                const updatedWishlist = wishlistItems.filter(item => item.id !== product.id);
+                localStorage.setItem('wishlistItems', JSON.stringify(updatedWishlist));
+
+                wishlistIcon.innerHTML = '🤍';
+                wishlistIcon.classList.remove('wishlist-icon-selected');
+            } else {
+                wishlistItems.push({
+                    id: product.id,
+                    details: JSON.stringify({
+                        name: product.name,
+                        price: product.price.toFixed(2)
+                    })
+                });
+
+                localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems));
+
+                wishlistIcon.innerHTML = '🤎';
+                wishlistIcon.classList.add('wishlist-icon-selected');
+            }
+        }
+
+        // Function to go to the wishlist page
+        function goToWishlist() {
+            window.location.href = 'wish_list.html';
+        }
+
+        // Event listener for the search icon
+        const searchContainer = document.getElementById('searchContainer');
+        const searchInput = document.getElementById('searchInput');
+        document.getElementById('searchIcon').addEventListener('click', performSearch);
+
+        // Function to perform search
+        function performSearch() {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+
+            if (searchTerm === '') {
+                alert('Please enter a search term.');
+                return;
+            }
+
+            const filteredProducts = productsData.filter(product =>
+                product.name.toLowerCase().includes(searchTerm)
+            );
+
+            if (filteredProducts.length === 0) {
+                const noResultsMessage = document.createElement('p');
+                noResultsMessage.textContent = 'No products found for the given search term.';
+                productContainer.innerHTML = '';
+                productContainer.appendChild(noResultsMessage);
+            } else {
+                displayProducts(filteredProducts);
+            }
+        }
+
+        function toggleUserDropdown() {
+            var dropdown = document.getElementById('userDropdown');
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function selectUserType(userType) {
+            document.getElementById('userType').innerText = userType;
+            toggleUserDropdown(); // Hide the dropdown after selection
+        }
+
+        function logout() {
+            alert("You logged out Successfully, BYE :( ")
+            window.location.href = 'home.html';
+
+        }
+        function order_history() {
+            window.location.href = 'customer_order_history.html';
+        }
+
+        
+        // Initialize product display
+        displayProducts();
+    </script>
+
+</body>
+
+</html>

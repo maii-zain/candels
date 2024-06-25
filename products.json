@@ -1,0 +1,1154 @@
+{
+    "products": [
+        {
+          "id": 51,
+          "name":"ENOKI CEDAR",
+          "description": "ENOKI CEDAR_7.2 OZ SOY CANDLE",
+          "price": 24,
+          "category": "Alchemy Candle",
+          "StockQuantity": 40,
+          "rating": 4.4,
+          "image": "./images/Blog Image-2.webp"
+        },
+        {
+          "id": 52,
+          "name":"GERANIUM MOSS",
+          "description": "GERANIUM MOSS_7.2 OZ SOY CANDLE",
+          "price": 24,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 40,
+          "rating": 4.4,
+          "image": "./images/ALSC3_400x.webp"
+        },
+        {
+          "id": 53,
+          "name":"MYRTLE MINT",
+          "description": "MYRTLE MINT_7.2 OZ SOY CANDLE",
+          "price": 24,
+          "category": "Alchemy Candle",
+          "StockQuantity": 45,
+          "rating": 4.4,
+          "image": "./images/ALSC4_400x.webp"
+        },
+        {
+          "id": 54,
+          "name":"BERGAMOT SHISO",
+          "description": "BERGAMOT SHISO_7.2 OZ SOY CANDLE",
+          "price": 24,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 45,
+          "rating": 4.4,
+          "image": "./images/ALSC1_400x.webp"
+        },
+        {
+          "id": 55,
+          "name":"ALCHEMY CANDLE COLLECTION",
+          "description": "ALCHEMY CANDLE COLLECTION",
+          "price": 86.50,
+          "category": "Alchemy Candle",
+          "StockQuantity": 10,
+          "rating": 4.4,
+          "image": "./images/ALSCALL_400x.webp"
+        },
+        {
+          "id": 56,
+          "name":"ENOKI CEDAR",
+          "description": "ENOKI CEDAR_INCENSE CONES",
+          "price": 16,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/ALIN2_400x.webp"
+        },
+        {
+          "id": 57,
+          "name":"GERANIUM MOSS",
+          "description": "GERANIUM MOSS_INCENSE CONES",
+          "price": 16,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/ALIN3_400x.webp"
+        },
+        {
+          "id": 58,
+          "name":"MYRTLE MINT",
+          "description": "MYRTLE MINT_INCENSE CONES",
+          "price":16,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/ALIN3_400x.webp"
+        },
+        {
+          "id": 59,
+          "name":"BERGAMOT SHISO",
+          "description": "BERGAMOT SHISO_INCENSE CONES",
+          "price":16,
+          "category": "Alchemy Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/ALIN1_400x.webp"
+        },
+        {
+          "id": 60,
+          "name":"ALCHEMY INCENSE COLLECTION",
+          "description": "ALCHEMY INCENSE COLLECTION",
+          "price":57.50,
+          "category": "Alchemy Candle",
+          "StockQuantity": 10,
+          "rating": 4,
+          "image": "./images/ALINALL_400x.webp"
+        },
+        {
+          "id": 61,
+          "name":"RED NUTMEG & PEPPERCORN",
+          "description": "RED NUTMEG & PEPPERCORN_7.2 OZ SOY CANDLE",
+          "price":20.40,
+          "category": "Limited Edition",
+          "Stock Quantity": 30,
+          "rating": 4.5,
+          "image": "./images/XC17_400x.webp"
+        },
+        {
+          "id": 62,
+          "name":"MISTLETOE SPECIAL",
+          "description": "MISTLETOE SPECIAL_7.2 OZ SOY CANDLE",
+          "price":20.40,
+          "category": "Limited Edition",
+          "Stock Quantity": 30,
+          "rating": 4.5,
+          "image": "./images/XC17_400x.webp"
+        },
+        {
+          "id": 13,
+          "name":"FRANKINCENSE & OUD",
+          "description": "FRANKINCENSE & OUD_7.2 OZ SOY CANDLE",
+          "price":20.40,
+          "category": "Limited Edition",
+          "Stock Quantity": 30,
+          "rating": 4.5,
+          "image": "./images/XC17_400x.webp"
+        },
+        {
+          "id": 14,
+          "name":"LIMITED WINTER CLASSICS BUNDLE",
+          "description": "LIMITED WINTER CLASSICS BUNDLE",
+          "price":61.30,
+          "category": "Limited Edition",
+          "Stock Quantity": 30,
+          "rating": 4.5,
+          "image": "./images/LWCB23_400x.webp"
+        },
+        {
+          "id": 15,
+          "name":"JEFFREY PINE FOR L.A. TIMES PLANTS",
+          "description": "JEFFREY PINE FOR L.A. TIMES PLANTS_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 35,
+          "rating": 4,
+          "image": "./images/SC-LATP2_400x.webp"
+        },
+        {
+          "id": 16,
+          "name":"COWBOY COLOGNE FOR L.A. TIMES PLANTS",
+          "description": "COWBOY COLOGNE FOR L.A. TIMES PLANTS_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 35,
+          "rating": 4,
+          "image": "./images/SC-LATP2_400x.webp"
+        },
+        {
+          "id": 17,
+          "name":"CALIFORNIA BLACK WALNUT FOR L.A. TIMES PLANTS",
+          "description": "CALIFORNIA BLACK WALNUT FOR L.A. TIMES PLANTS_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 35,
+          "rating": 4,
+          "image": "./images/SC-LATP2_400x.webp"
+        },
+        {
+          "id": 18,
+          "name":"L.A. TIMES PLANTS BUNDLE",
+          "description": "L.A. TIMES PLANTS BUNDLE",
+          "price":61.30,
+          "category": "Standard Candle",
+          "Stock Quantity": 10,
+          "rating": 4,
+          "image": "./images/LATPB23_400x.webp"
+        },
+        {
+          "id": 19,
+          "name":"WILD HERB TONIC",
+          "description": "WILD HERB TONIC_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC36_400x.webp"
+        },
+        {
+          "id": 20,
+          "name":"PERSIMMON CIDER",
+          "description": "PERSIMMON CIDER_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/XC15_400x.webp"
+        },
+        {
+          "id": 21,
+          "name":"PATCHOULI SWEETGRASS",
+          "description": "PATCHOULI SWEETGRASS_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 22,
+          "name":"AMBER & MOSS",
+          "description": "AMBER & MOSS_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 23,
+          "name":"SWEET GRAPEFRUIT",
+          "description": "SWEET GRAPEFRUIT_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 24,
+          "name":"TEAKWOOD & TOBACCO",
+          "description": "TEAKWOOD & TOBACCO_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 25,
+          "name":"GOLDEN COAST",
+          "description": "GOLDEN COAST_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 26,
+          "name":"BLACK FIG",
+          "description": "BLACK FIG– 7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 27,
+          "name":"PIÑON",
+          "description": "PIÑON_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 28,
+          "name":"SANDALWOOD ROSE",
+          "description": "SANDALWOOD ROSE_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 29,
+          "name":"LOS ANGELES",
+          "description": "LOS ANGELES_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 30,
+          "name":"OJAI LAVENDER",
+          "description": "OJAI LAVENDER_7.2 OZ SOY CANDLE",
+          "price":24,
+          "category": "Standard Candle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/SC10_400x.webp"
+        },
+        {
+          "id": 31,
+          "name":"ITALIAN SUMMER FOR LISA SAYS GAH",
+          "description": "ITALIAN SUMMER FOR LISA SAYS GAH_7.2 OZ SOY CANDLE",
+          "price":26,
+          "category": "Standard Candle",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/LSG-5_400x.webp"
+        },
+        {
+          "id": 32,
+          "name":"ALL THE CLASSICS",
+          "description": "ALL THE CLASSICS",
+          "price":192,
+          "category": "Standard Candle",
+          "Stock Quantity": 15,
+          "rating": 4,
+          "image": "./images/ATCV4_400x.webp"
+        },
+        {
+          "id": 33,
+          "name":"REST & RELAX BUNDLE",
+          "description": "REST & RELAX BUNDLE",
+          "price":61.40,
+          "category": "Bundle",
+          "Stock Quantity": 15,
+          "rating": 4,
+          "image": "./images/TTB21_400x.webp"
+        },
+        {
+          "id": 34,
+          "name":"JUST THE BASICS",
+          "description": "JUST THE BASICS",
+          "price":45,
+          "category": "Bundle",
+          "Stock Quantity": 15,
+          "rating": 4,
+          "image": "./images/Q1B3AM_400x.webp"
+        },
+        {
+          "id": 35,
+          "name":"GOLDEN COAST",
+          "description": "GOLDEN COAST_12.5 OZ SOY CANDLE",
+          "price":34,
+          "category": "Large Candle",
+          "Stock Quantity": 50,
+          "rating": 4,
+          "image": "./images/LC35_400x.webp"
+        },
+        {
+          "id": 36,
+          "name":"AMBER & MOSS",
+          "description": "AMBER & MOSS_12.5 OZ SOY CANDLE",
+          "price":34,
+          "category": "Large Candle",
+          "Stock Quantity": 50,
+          "rating": 4,
+          "image": "./images/LC4_800x.webp"
+        },
+        {
+          "id": 37,
+          "name":"OJAI LAVENDER",
+          "description": "OJAI LAVENDER_12.5 OZ SOY CANDLE",
+          "price":34,
+          "category": "Large Candle",
+          "Stock Quantity": 50,
+          "rating": 4,
+          "image": "./images/LC4_800x.webp"
+        },
+        {
+          "id": 38,
+          "name":"WILD HERB TONIC",
+          "description": "WILD HERB TONIC_3.5 OZ SOY CANDLE",
+          "price":14,
+          "category": "Mini Candle",
+          "Stock Quantity": 60,
+          "rating": 4,
+          "image": "./images/MC11_400x.webp"
+        },
+        {
+          "id": 39,
+          "name":"AMBER & MOSS",
+          "description": "AMBER & MOSS_3.5 OZ SOY CANDLE",
+          "price":14,
+          "category": "Mini Candle",
+          "Stock Quantity": 60,
+          "rating": 4,
+          "image": "./images/MC11_400x.webp"
+        },
+        {
+          "id": 40,
+          "name":"SANDALWOOD ROSE",
+          "description": "SANDALWOOD ROSE_3.5 OZ SOY CANDLE",
+          "price":14,
+          "category": "Mini Candle",
+          "Stock Quantity": 60,
+          "rating": 4,
+          "image": "./images/MC11_400x.webp"
+        },
+        {
+          "id": 41,
+          "name":"OJAI LAVENDER",
+          "description": "OJAI LAVENDER_3.5 OZ SOY CANDLE",
+          "price":14,
+          "category": "Mini Candle",
+          "Stock Quantity": 60,
+          "rating": 4,
+          "image": "./images/MC11_400x.webp"
+        },
+        {
+          "id": 42,
+          "name":"GOLDEN HOUR",
+          "description": "GOLDEN HOUR_10 OZ SOY CANDLE",
+          "price":14,
+          "category": "Sunset Candle",
+          "Stock Quantity": 50,
+          "rating": 4,
+          "image": "./images/SLC2_400x.webp"
+        },
+        {
+          "id": 43,
+          "name":"SWELL",
+          "description": "SWELL_10 OZ SOY CANDLE",
+          "price":20,
+          "category": "Sunset Candle",
+          "Stock Quantity": 50,
+          "rating": 4,
+          "image": "./images/SLC3_400x.webp"
+        },
+        {
+          "id": 44,
+          "name":"MILLENNIUM FALCON™ 3-Wick Candle",
+          "description": "Leather, Rusted Steel, Cashmere Musk",
+          "price":75,
+          "category": "Bundle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Star.Wars.Millennium.Falcon.11.2023.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 45,
+          "name":"Buddy's Breakfast Candle",
+          "description": "Marshmallow, Chocolate, Peppermint",
+          "price":32,
+          "category": "Bundle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Elf.11.9.2023.Candle.Buddys.Breakfast.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 46,
+          "name":"Gimbels Candle",
+          "description": "Eucalyptus, Passion Fruit, Peppermint",
+          "price":32,
+          "category": "Bundle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Elf.11.9.2023.Candle.Gimbels.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 47,
+          "name":"Wizarding World Bundle",
+          "description": "Fresh Hay, Sunflower, Orange Peel",
+          "price":105.50,
+          "category": "Harry Potter",
+          "Stock Quantity": 10,
+          "rating": 4,
+          "image": "./images/hms.harry.potter.ext.10.2023.social.9.27.2023.square.1_720_670x670.webp"
+        },
+        {
+          "id": 48,
+          "name":"Harry Potter Quidditch Pitch Candle",
+          "description": "Grass, Leather, Sandalwood",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Harry.Potter.Quidditch.Pitch.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 49,
+          "name":"Harry Potter Platform 9 ¾ Candle",
+          "description": "Brick Wall, Leather, Charcoal",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Harry.Potter.Platform.9.4.3.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 50,
+          "name":"Harry Potter Diagon Alley Candle",
+          "description": "Cobblestone, Butterscotch, Elm Bark",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Harry.Potter.Diagon.Alley.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 1,
+          "name":"Spiral Hill Candle",
+          "description": "Dark Amber, Cinnamon, Misted Fog",
+          "price":31.50,
+          "category": "Bundle",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.NBC.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 2,
+          "name":"The Halloween Bundle",
+          "description": "Dark Amber, Cinnamon, Pumpkin",
+          "price":72.40,
+          "category": "Bundle",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.NBC.Candle.1.Ecom.PDP.Bundle_670x670.webp"
+        },
+        {
+          "id": 3,
+          "name":"Barbie™ Dreamhouse™ Candle",
+          "description": "Sweet Peony, Lemon Zest, Sandalwood",
+          "price":44,
+          "category": "Disney",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Barbie.Dreamhouse.Ecom.PDP.1.1_670x670.webp"
+        },
+        {
+          "id": 4,
+          "name":"The Malibu Barbie™ Bundle",
+          "description": "Hyacinth, Orange Zest",
+          "price":65,
+          "category": "Disney",
+          "Stock Quantity": 10,
+          "rating": 4,
+          "image": "./images/HMS.Barbie.Dreamhouse.Ecom.Bundle.1.3_670x670.webp"
+        },
+        {
+          "id": 5,
+          "name":"Toy Story Andy's Room Candle",
+          "description": "Hyacinth, Blue Lavender, Teakwood",
+          "price":31,
+          "category": "Disney",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Pixar.Andy_sRoom.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 6,
+          "name":"Toy Story Pizza Planet Candle",
+          "description": "Orange Zest, Thyme, Oven Crust",
+          "price":31,
+          "category": "Disney",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Pixar.PizzaPlanet.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 7,
+          "name":"The Toy Story Bundle",
+          "description": "Hyacinth, Orange Zest",
+          "price":84,
+          "category": "Disney",
+          "Stock Quantity": 10,
+          "rating": 4,
+          "image": "./images/HMS.Disney.Pixar.Tory.Story.Bundle.Studio.eCom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 8,
+          "name":"Winnie The Pooh 100 Acre Wood Candle",
+          "description": "Thyme, Fern Leaves, Sandalwood",
+          "price":31,
+          "category": "Disney",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.WinniethePooh.100AcreWood.Candle.Ecom.12_670x670.webp"
+        },
+        {
+          "id": 9,
+          "name":"The Rescue Candle",
+          "description": "Sea Moss, Guaiac Wood, Hinoki",
+          "price":33,
+          "category": "Mandalorian",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Disney.Mandalorian.TheRescue.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 10,
+          "name":"The Bounty Candle",
+          "description": "Desert Sands, Volcanic Ash, Vetiver",
+          "price":33,
+          "category": "Mandalorian",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Disney.Mandalorian.TheBounty.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 11,
+          "name":"The Mandalorian Collection™",
+          "description": "Desert Sands, Sea Moss",
+          "price":66,
+          "category": "Mandalorian",
+          "Stock Quantity": 40,
+          "rating": 4,
+          "image": "./images/HMS.Disney.Mandalorian.Bundles.Ecom1_670x670.webp"
+        },
+        {
+          "id": 12,
+          "name":"Winnie The Pooh The Hunny Tree Candle",
+          "description": "Cool Air, Honeyed Milk, Oakwood",
+          "price":32,
+          "category": "Disney",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.WinniethePooh.TheHoneyTreeA.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 13,
+          "name":"Winnie The Pooh Collection",
+          "description": "Thyme, Cool Air",
+          "price":71.24,
+          "category": "Disney",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.WinniethePooh.Candle.Book.Bundle.Ecom.1_af1c9fed-f722-40b3-bedd-d91ee9a9d09e_670x670.webp"
+        },
+        {
+          "id": 63,
+          "name":"FRIENDS™ Central Perk™ Candle",
+          "description": "Espresso Bean, Carmel, Mocha",
+          "price":32,
+          "category": "Bundle",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.Central.Perk.Friends.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 64,
+          "name":"Endor™ Candle",
+          "description": "Wild Fern, Geranium, Guaiac Wood",
+          "price":33,
+          "category": "Star Wars",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.StarWars.EndorCandle.Ecom1_670x670.webp"
+        },
+        {
+          "id": 65,
+          "name":"The Death Star™ Candle",
+          "description": "Tobacco, Forged Steel, Leather",
+          "price":33,
+          "category": "Star Wars",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.StarWars.DeathStarCandle.Ecom1_f5d949c7-20b0-43eb-ae81-3aa699814fc7_670x670.webp"
+        },
+        {
+          "id": 66,
+          "name":"Tatooine™ Candle",
+          "description": "Bergamot, Sage Bush, Copal",
+          "price":33,
+          "category": "Star Wars",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.StarWars.TatooineCandle.Ecom1_670x670.webp"
+        },
+        {
+          "id": 67,
+          "name":"Star Wars™ Collection",
+          "description": "Bergamot, Smoke Amber, Wild Fern",
+          "price":99,
+          "category": "Star Wars",
+          "Stock Quantity": 30,
+          "rating": 4,
+          "image": "./images/HMS.StarWars.OwntheCollectionBundle.Ecom_670x670.webp"
+        },
+        {
+          "id": 68,
+          "name":"Harry Potter Gryffindor™ Candle",
+          "description": "Fireplace, Cinnamon, Amber",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Gryffindor.Candle.Ecom.1_0e4d7355-4814-4e77-838b-8e12abc477ac_670x670.webp"
+        },
+        {
+          "id": 69,
+          "name":"Harry Potter Slytherin™ Candle",
+          "description": "Lake Water, Tapestry, Oakmoss",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Slytherin.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 70,
+          "name":"Harry Potter Hufflepuff™ Candle",
+          "description": "Green Apple, Fern Leaves, Patchouli",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Hufflepuff.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 71,
+          "name":"Harry Potter Ravenclaw™ Candle",
+          "description": "Sage, Opium, White Musk",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Ravenclaw.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 72,
+          "name":"Harry Potter Hogwarts™ 3-Wick Candle",
+          "description": "Wet Stone, Cypress, Fir Needles",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Hogwarts.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 73,
+          "name":"Harry Potter Hogwarts™ 3-Wick Candle",
+          "description": "Wet Stone, Cypress, Fir Needles",
+          "price":33,
+          "category": "Harry Potter",
+          "Stock Quantity": 50,
+          "rating": 5,
+          "image": "./images/HMS.Hogwarts.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 74,
+          "name":"Disney Minnie Mouse™ Candle",
+          "description": "Lemon Zest, Amber, Sweet Peony",
+          "price":33,
+          "category": "Disney",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Disney.MinnieMouse.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 75,
+          "name":"Disney Mickey Mouse™ Candle",
+          "description": "Italian Mandarin, Clove, Apple Peel",
+          "price":33,
+          "category": "Disney",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Disney.MickeyMouse.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 76,
+          "name":"Disney™ The Perfect Pair Bundle",
+          "description": "Italian Mandarin, Magnolia Petals",
+          "price":88,
+          "category": "Disney",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Valentines.Web.1.PDP_670x670.webp"
+        },
+        {
+          "id": 77,
+          "name":"Girl Scout Camp Candle",
+          "description": "Girl Scout Camp Candle",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.GirlScouts.Candle.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 78,
+          "name":"Yankee Stadium Candle",
+          "description": "Yankee Stadium Candle",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.YankeeStadium.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 79,
+          "name":"Fenway Park Candle",
+          "description": "Fresh Ivy, Cedar, Red Clay",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.FenwayPark.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 80,
+          "name":"Oracle Park Candle",
+          "description": "Fresh Marine, Peanuts, Fresh Grass",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.OraclePark.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 81,
+          "name":"Busch Stadium Candle",
+          "description": "Red Clay, Hops, Oregano",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.BuschStadium.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 82,
+          "name":"Baton Rouge Candle",
+          "description": "Morning Dew, Magnolia Blooms, Oakmoss",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.BatonRouge.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 83,
+          "name":"Tuscaloosa Candle",
+          "description": "Spring Water, Cherries, Amber",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Tuscaloosa.Candle.Ecom._670x670.webp"
+        },
+        {
+          "id": 84,
+          "name":"Columbus Candle",
+          "description": "Sage Leaf, Honeysuckle, Amber",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Columbus.Candle.Ecom._670x670.webp"
+        },
+        {
+          "id": 85,
+          "name":"Blacksburg Candle",
+          "description": "Pine Needles, Honeysuckle, Hokie Stone",
+          "price":31,
+          "category": "Standard Candle",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Blacksburg.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 86,
+          "name":"OSU Pride Bundle",
+          "description": "Sage Leaf, Honeysuckle",
+          "price":64,
+          "category": "College.Towns.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.College.Towns.Bundles.OSU.1240x1240_670x670.webp"
+        },
+        {
+          "id": 87,
+          "name":"VT Pride Bundle",
+          "description": "Pine Needles, Fir Needles",
+          "price":64,
+          "category": "College.Towns.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.College.Towns.Bundles.VTech.1240x1240_670x670.webp"
+        },
+        {
+          "id": 88,
+          "name":"LSU Pride Bundle",
+          "description": "Morning Dew, Sweet Potato",
+          "price":64,
+          "category": "College.Towns.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.College.Towns.Bundles.LSU.1240x1240_670x670.webp"
+        },
+        {
+          "id": 89,
+          "name":"Wrigley Field Candle",
+          "description": "Grass, Fresh Ivy, Popcorn",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.WirgleyField.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 90,
+          "name":"Dodger Stadium Candle",
+          "description": "Popcorn, Peanuts, Fresh Grass",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.DodgerStadium.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 91,
+          "name":"Tucson Candle",
+          "description": "Lemon Eegee, Amber, Suede",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Tuscon.CollegeTowns.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 92,
+          "name":"Lawrence Candle",
+          "description": "Pine Needles, Honey, Stone Walls",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Lawrence.CollegeTowns.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 93,
+          "name":"Downtown LA Candle",
+          "description": "Jasmine, Rosewater, Honey",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.DowntownLA.CollegeTowns.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 94,
+          "name":"Athens Candle",
+          "description": "Lake Water, Magnolia Bark, Oakmoss",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Athens.CollegeTowns.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 95,
+          "name":"Minute Maid Park Candle",
+          "description": "Orange Juice, Waffle Cone, Fresh Grass",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.MinuteMaidPark.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 96,
+          "name":"Citi Field Candle",
+          "description": "Popcorn, Peanuts, Fresh Grass",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.CitiField.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 97,
+          "name":"Citizens Bank Park Candle",
+          "description": "Red Clay, Hoagie Rolls, Oregano",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.CitizensBank.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 98,
+          "name":"West Lafayette Candle",
+          "description": "Smoke, Steel, Vanilla",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.WestLafayette.CollegeTowns.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 99,
+          "name":"Truist Park Candle",
+          "description": "Fresh Grass, Cedar, Red Clay",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.TruistPark.Candle.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 100,
+          "name":"Game Day Candle",
+          "description": "Grass, Charcoal, Lime Peel",
+          "price":32,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.College.Towns.Game.Day.Candle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 101,
+          "name":"FRIENDS™ Manhattan Bundle",
+          "description": "Espresso Bean, Bergamot",
+          "price":64.50,
+          "category": "College.Towns",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Central.Perk.Friends.NYC.Bundle.Lifestyle.2_670x670.webp"
+        },
+        {
+          "id": 102,
+          "name":"Red Sox Fan Bundle",
+          "description": "Fresh Ivy, Orange",
+          "price":64,
+          "category": ".MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Red.Sox.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 103,
+          "name":"Cardinals Fan Bundle",
+          "description": "Red Clay, Bergamot",
+          "price":64,
+          "category": ".MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Cardinals.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 104,
+          "name":"Dodgers Fan Bundle",
+          "description": "Popcorn, Orange",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Dodgers.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 105,
+          "name":"Cubs Fan Bundle",
+          "description": "Grass, Sandalwood",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Cubs.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 106,
+          "name":"Yankees Fan Bundle",
+          "description": "Cut Grass, Bergamot",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Yankees.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 107,
+          "name":"Atlanta Braves Fan Bundle",
+          "description": "Atlanta Braves Fan Bundle",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Candles.Ecom.Bundle.17_670x670.webp"
+        },
+        {
+          "id": 108,
+          "name":"Houston Astros Fan Bundle",
+          "description": "Houston Astros Fan Bundle",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Candles.Ecom.Bundle.16_670x670.webp"
+        },
+        {
+          "id": 109,
+          "name":"New York Mets Fan Bundle",
+          "description": "New York Mets Fan Bundle",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Candles.Ecom.Bundle.11_670x670.webp"
+        },
+        {
+          "id": 110,
+          "name":"Giants Fan Bundle",
+          "description": "Giants Fan Bundle",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.MLB.Bundles.Giants.Ecom.1_670x670.webp"
+        },
+        {
+          "id": 111,
+          "name":"Ken™ Mojo Dojo Casa House Candle",
+          "description": "Golden Hops, Cinnamon, Leather",
+          "price":44,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Barbie.Ken.Ecom.PDP.1.1_1_670x670.webp"
+        },
+        {
+          "id": 112,
+          "name":"Holiday Shopping Bundle",
+          "description": "Holiday Shopping Bundle",
+          "price":64,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Elf.11.9.2023.Holiday.Shopping.Bundle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 113,
+          "name":"Elf Collection Bundle",
+          "description": "Elf Collection Bundle",
+          "price":68,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Elf.11.9.2023.Elf.Collection.Bundle.1.Ecom.PDP.1_670x670.webp"
+        },
+        {
+          "id": 114,
+          "name":"Santa's Helper Bundle",
+          "description": "Santa's Helper Bundle",
+          "price":86,
+          "category": "MLB.Bundles",
+          "Stock Quantity": 20,
+          "rating": 4,
+          "image": "./images/HMS.Elf.11.9.2023.Santas.Helper.Bundle.1.Ecom.PDP.1_670x670.webp"
+        }
+      ]
+}

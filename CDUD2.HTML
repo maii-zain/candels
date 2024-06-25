@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDUD Page</title>
+    <link rel="stylesheet" href="css/CRUD2.CSS">
+</head>
+
+<body>
+    <h2>CDUD Page</h2>
+
+    <button onclick="showAddForm()">Add</button>
+    <button onclick="showSearchForm()">Search</button>
+
+    <div id="addForm" style="display: none;">
+        <h3>Add Item</h3>
+        <form id="addItemForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required><br>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required><br>
+
+            <label for="StockQuantity">Stock Quantity:</label>
+            <input type="text" id="StockQuantity" name="StockQuantity" required><br>
+
+            <label for="image">Image:</label>
+            <input type="text" id="image" name="image" required><br>
+
+            <button type="button" onclick="addItem()">Submit</button>
+        </form>
+    </div>
+
+    <div id="searchForm" style="display: none;">
+        <h3>Search Item</h3>
+        <form id="searchItemForm">
+            <label for="searchId">ID:</label>
+            <input type="text" id="searchId" name="searchId" required><br>
+
+            <button type="button" onclick="searchItem()">Search</button>
+        </form>
+    </div>
+
+    <h3>Item List</h3>
+    <table id="itemTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Stock Quantity</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table content will be populated dynamically using JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="js/CRUD2.js"></script>
+</body>
+
+</html>

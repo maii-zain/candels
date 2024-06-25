@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placing Order</title>
+
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #FAF1E7;
+            color: rgb(78, 44, 0);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-width: 3px;
+            border-color: rgb(78, 44, 0);
+        }
+
+        #orderSummary {
+            margin-top: 80px;
+            width: 60%;
+            border: 2px solid #8B4513;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #orderInfo {
+            margin-top: 20px;
+        }
+
+        .product-image {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="afterlogin.html" style="color: #8B4513;">Back to Home</a>
+    </header>
+
+    <div id="orderSummary">
+        <h1>Order Summary</h1>
+        <div id="orderInfo"></div>
+    </div>
+
+    <script>
+        // Retrieve checkout information from the query parameter
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const orderInfo = JSON.parse(decodeURIComponent(urlParams.get('info')));
+
+        // Display order information
+        const orderInfoElement = document.getElementById('orderInfo');
+        if (orderInfoElement) {
+            orderInfoElement.innerHTML = `<p>Total Price: ${orderInfo.totalPrice}</p><p>Products:</p>`;
+
+            orderInfo.products.forEach(product => {
+                orderInfoElement.innerHTML += `<div><img class="product-image" src="${product.image}" alt="${product.name}"><p>${product.name} - Quantity: ${product.quantity}</p></div>`;
+            });
+        }
+
+        // Simulate an event when the order status changes
+        function simulateOrderStatusChange(status) {
+            const event = new CustomEvent('orderStatusChanged', { detail: { status } });
+            document.dispatchEvent(event);
+        }
+
+        // Function to update order status in local storage
+        function updateOrderStatus(status) {
+            // Retrieve orders from local storage
+            const orders = JSON.parse(localStorage.getItem('orders')) || [];
+
+            // Find the order by its details and update the status
+            const updatedOrders = orders.map(order => {
+                if (compareOrders(order, orderInfo)) {
+                    return { ...order, status };
+                }
+                return order;
+            });
+
+            // Update local storage with the modified orders
+            localStorage.setItem('orders', JSON.stringify(updatedOrders));
+
+            // Trigger the order status changed event
+            simulateOrderStatusChange(status);
+        }
+
+        // Function to compare two orders based on their details
+        function compareOrders(order1, order2) {
+            return (
+                order1.totalPrice === order2.totalPrice &&
+                JSON.stringify(order1.products) === JSON.stringify(order2.products)
+            );
+        }
+
+        // Listen for the order status changed event
+        document.addEventListener('orderStatusChanged', (event) => {
+            const newStatus = event.detail.status;
+            alert(`Order status changed to: ${newStatus}`);
+        });
+    </script>
+</body>
+
+</html>

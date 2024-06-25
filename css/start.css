@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Arabic');
+
+
+
+body, html {
+  height: 100%;
+  margin: 50px 30px 10px 30px;
+  
+}
+
+header {
+  background-color: #8B4513;
+  color: #FAF1E7;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1px;
+  position: relative;
+  top: -80px;
+  box-shadow: 2px 2px 5px #888888;
+  font-family: lucida calligraphy , cursive;
+  height:130px ;
+
+  
+}
+
+.container {
+  height: 65%; /* Increased height */
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 55px;
+  align-items: center;
+  background-color: #FAF1E7; 
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #888888, -2px -2px 5px #ffffff;
+  
+}
+
+#quote-container {
+  flex: 1;
+  text-align: center;
+}
+
+#quote {
+  font-size: 18px;
+}
+
+#slider-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%; /* Make the slider match the container height */
+}
+
+#slider-container img {
+  max-width: 60%; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 70px;
+  display: none;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #888888, -2px -2px 5px #ffffff;
+
+}
+p{
+  font-family: lucida calligraphy , cursive;
+  font-style:italic;
+  font-weight: bold;
+  text-shadow: burlywood 10px 10px 10px ;
+ position: relative;
+ right: -40px;
+ text-align:initial;
+ line-height: 2.5;
+ border: 10px double  burlywood;
+ padding-left: 50px;
+ padding-right: 50px;
+  
+}
+.arabic{
+  font-family: 'Amiri', sans-serif;
+ 
+}
+.home_link{
+  color:  #8B4513;
+  position: relative;
+  top: 150px;
+  right: 980px;
+}

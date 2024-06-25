@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 100px;
+    background-color: #FAF1E7;
+    color: #8B4513;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom:  50px; 
+}
+
+.login-container h2,
+.login-container p {
+    color: #8B4513;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom:  50px; 
+}
+
+button {
+    width: 50%;
+    background-color: #8B4513;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom:  50px; 
+    
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 4px;
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+ input[type=text]:focus,
+input[type=password]:focus {
+    border-color: #8B4513; 
+    outline: none; 
+}
+
+button:hover {
+    background-color: #a28167;
+}
+
+.creatacc{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:-3px; 
+
+}
+
+a{
+    color: #8B4513;
+    
+    
+}
+
+
+
+h2{
+    text-align: center;
+}
+.candlelog {
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom:  50px;
+    left: 10px; /* Adjust this if needed, or remove it if you want the element to be centered without any left offset */
+}
+p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom:  50px;  
+}
+
+.save{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:30px; 
+
+}
+.savebut{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:11px; 
+    right: 120px;
+
+}

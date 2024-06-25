@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product CRUD Operations</title>
+    <link rel="stylesheet" href="css/CRUD.CSS">
+</head>
+<body>
+    <div  id="productList"></div>
+    <div class="container">
+        <header>
+            <h1> <span>CRUD OF</span><span class="arabic" style="font-family: 'cairo', sans-serif;"><br/>قوم ولعلك شمعة</span></h1>
+            <a href="home.html">Log out </a>
+        </header>
+        <label for="productId">Enter Product ID:</label><br/>
+        <div class="search-container">
+        <input type="text" id="productId" placeholder="Enter product ID">
+        <button onclick="searchProduct()">Search</button>
+        </div>
+        <div id="productDetails"></div>
+
+        <!-- CRUD buttons -->
+        <center>
+        <button onclick="createProduct()">Create Product</button>
+        
+        <button onclick="updateProduct()">Update Product</button>
+        <button onclick="deleteProduct()">Delete Product</button>
+        <button onclick="Appending_Orders()">Appending Orders</a></button>
+        <button onclick="all_Orders()">All Orders</a></button>
+    </center>
+    </div>
+
+    <script src="js/CRUD.js"></script>
+</body>
+</html>
